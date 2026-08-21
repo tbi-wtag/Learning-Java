@@ -1,0 +1,20 @@
+
+    // 1. STATIC VARIABLE (Class Variable)
+    // Shared by all instances of this class
+    public static String schoolName = "Tech Academy"; 
+
+    // 2. INSTANCE VARIABLE (Field)
+    // Each object of VariableDemo will have its own unique studentName
+    public String studentName; 
+
+    public void displayInformation(int temporaryId) {
+        // 3. LOCAL VARIABLE
+        // Only exists inside this displayInformation method
+        int reviewScore = 95; 
+        
+        System.out.println("ID (Local Parameter): " + temporaryId);
+        System.out.println("Score (Local): " + reviewScore);
+        System.out.println("Student (Instance): " + studentName);
+        System.out.println("School (Static): " + schoolName);
+    }
+}
