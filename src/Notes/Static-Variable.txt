@@ -1,0 +1,49 @@
+Local Variables
+A variable defined within a block, method, or constructor is referred to as a local variable. 
+
+class Geeks {
+    public static void main(String[] args)
+    {
+        // Declared a Local Variable
+        int var = 10;
+
+        System.out.println("Local Variable: " + var);
+    }
+}
+
+
+Instance Variables
+Instance variables are known as non-static variables and are declared in a class outside of any method, constructor, or block. 
+Instance variables are created when an object is instantiated and destroyed when the object is destroyed.
+
+class Geeks {
+
+    // Declared Instance Variable
+    public String geek;
+    public int i;
+    public Integer I;
+    public Geeks()
+}
+
+
+Static Variables
+Static variables in Java are variables declared with the static keyword inside a class but outside any method. 
+They are shared among all objects of the class and exist for the entire lifetime of the program. 
+There is only one copy of a static variable for the entire class, and all objects share it.
+
+class Geeks {
+    
+    // Static variable
+    static String geek = "Sweta Dash";
+  
+    public static void main(String[] args)
+    {
+        // Access static variable without creating an object
+        System.out.println("Geek Name is: " + Geeks.geek);
+
+        // static int c = 0; 
+        // Error: static variables cannot be declared inside a method
+    }
+}
+
+In non-static method, you can use static variables.

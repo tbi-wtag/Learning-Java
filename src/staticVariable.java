@@ -1,7 +1,7 @@
 class Mobile{
     String brand;
     int price;
-    String name;
+    static String name;
 
     public void showDetails(){
         System.out.println("Brand: " + brand);
@@ -14,13 +14,13 @@ public class staticVariable {
     public static void main(String[] args) throws Exception {
         Mobile obj1 = new Mobile();
         obj1.brand = "Apple";
-        obj1.price = 1500;
-        obj1.name = "SmartPhonne";
 
         Mobile obj2 = new Mobile();
         obj2.brand = "Samsung";
         obj2.price = 1000;
-        obj2.name = "SmartPhonne";
+        
+        Mobile.name = "SmartPhone";
+
 
         obj1.showDetails();
         obj2.showDetails();
