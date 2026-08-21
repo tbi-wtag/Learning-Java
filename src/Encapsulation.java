@@ -8,7 +8,7 @@ class Human{
     private int age = 11;
     private String name = "Navin";
 
-    public int getAge(){
+    public int getAge(){ //getter
         return age;
     }
 
@@ -16,7 +16,7 @@ class Human{
         return name;
     }
 
-    public void setAge(int a){
+    public void setAge(int a){  //setter
         age = a;
     }
 
